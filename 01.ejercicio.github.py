@@ -19,14 +19,15 @@ def funcion_leer_nota(dato):
 
 #Función para calcular promedio
 def calcular_promedio(nota1, nota2, nota3):
-    return (nota1 + nota2 + nota3) / 3       
+    return (nota1 + nota2 + nota3) / cantidad       
 
 # --- PROGRAMA PRINCIPAL ---
 
-estudiantes = []
+notas = []
 
 try:
-    cantidad = int(input("¿Cuántos estudiantes desea registrar?: "))
+    cantidad = int(input("¿Cuántos notas desea registrar?: "))
 except:
     print("Debe ingresar un número válido.")
     cantidad = 0
+
